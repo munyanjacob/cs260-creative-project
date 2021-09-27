@@ -11,8 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
 
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="/css/styles.css" />
-    <title>Best Cookies</title>
+    <title>All Cookies</title>
   </head>
 
   <body>
@@ -26,7 +28,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <div class="navbar-nav">
-                <a class="nav-item nav-link" href="/pages/all-cookies.html">All Cookies</a>
+                <a class="nav-item nav-link active" href="/pages/all-cookies.html">All Cookies</a>
                 <a class="nav-item nav-link" href="/pages/add-cookie.html">New Cookie</a>
                 <a class="nav-item nav-link" href="/pages/about.html">About</a>
               </div>
@@ -39,18 +41,35 @@
 
         <main class="text-center">
 
-          <h2 class="text-white my-5 section-header">Searching for the <span>Best Cookie in the Universe</span></h2>
+          <h2 class="text-white my-5 section-header">All Cookies</h2>
 
-          <h4 class="section-header">Current Leader:</h4>
+          <div class="container d-flex flex-column justify-content-center my-4 px-0 cookie-container">
+            <div class="row gx-0 d-flex flex-horizontal mb-2">
+              <div class="col-9 col-sm-8 col-md-6 col-lg-5 d-flex justify-content-center">
+                <div class="input-group rounded search-cookie-container">
+                  <input class="form-control search-cookie-input" type="text" placeholder="Search..">
+                  <span class="btn border-0 text-white bg-dark" id="search-addon">
+                    <i class="fa fa-search"></i>
+                  </span>
 
-          <div class="container d-flex justify-content-center my-4 px-0 cookie-container">
+                </div>
+              </div>
+              <div class="col-3 col-sm-2 offset-sm-2 col-md-3 offset-md-3 col-lg-2 offset-lg-5 d-flex justify-content-center">
+                <a href="#" class="btn btn-info text-white bg-dark pb-0 border-0">
+                  <span class="d-none d-sm-inline pr-2">Filter</span>
+                  <span class="fa fa-filter cookie-filter-button" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+
+
             <div class="row gx-0">
               <div class="col-lg-12">
-                <div class="card bg-dark">
+                <div class="card cookie-card bg-dark">
                   <div class="row gx-0">
                     <div class="col-sm-12 col-lg-5 px-0">
                       <div class="card-body d-flex justify-content-center">
-                        <img src="/images/cookies/current-top-cookie.jpg" class="cookie-image cookie-image-emphasis" alt="Image of the current top cookie.">
+                        <img src="/images/cookies/current-top-cookie.jpg" class="cookie-image" alt="Image of cookie.">
                       </div>
                     </div>
                     <div class="col-sm-12 col-lg-7 px-0 align-self-center">
@@ -69,6 +88,56 @@
                     </div>
                   </div>
                 </div>
+
+                <div class="card cookie-card bg-dark">
+                  <div class="row gx-0">
+                    <div class="col-sm-12 col-lg-5 px-0">
+                      <div class="card-body d-flex justify-content-center">
+                        <img src="/images/cookies/current-top-cookie.jpg" class="cookie-image" alt="Image of cookie.">
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-7 px-0 align-self-center">
+                      <div class="card-body cookie-card-details px-1">
+                        <div class="d-flex justify-content-center mb-4">
+                          <div class="cookie-title-wrapper">
+                            <h3 class="px-2"><strong>Chocolate Chip Wonder</strong></h3>
+                            <h5> by John Doe</h5>
+                          </div>
+                        </div>
+                        <p>An out-of-this-world take on a classic, sure to blow your mind. In the future, clicking on this will bring up the recipe.</p>
+                        <div class="d-flex justify-content-center cookie-description-wrapper">
+                          <p>Rated: <strong>9.4/10</strong> from <strong>1453</strong> reviews.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card cookie-card bg-dark">
+                  <div class="row gx-0">
+                    <div class="col-sm-12 col-lg-5 px-0">
+                      <div class="card-body d-flex justify-content-center">
+                        <img src="/images/cookies/current-top-cookie.jpg" class="cookie-image" alt="Image of cookie.">
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-7 px-0 align-self-center">
+                      <div class="card-body cookie-card-details px-1">
+                        <div class="d-flex justify-content-center mb-4">
+                          <div class="cookie-title-wrapper">
+                            <h3 class="px-2"><strong>Chocolate Chip Wonder</strong></h3>
+                            <h5> by John Doe</h5>
+                          </div>
+                        </div>
+                        <p>An out-of-this-world take on a classic, sure to blow your mind. In the future, clicking on this will bring up the recipe.</p>
+                        <div class="d-flex justify-content-center cookie-description-wrapper">
+                          <p>Rated: <strong>9.4/10</strong> from <strong>1453</strong> reviews.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
               </div>
             </div>
           </div>

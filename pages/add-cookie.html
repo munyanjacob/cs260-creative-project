@@ -14,7 +14,7 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/styles.css" />
-    <title>About</title>
+    <title>New Cookie</title>
   </head>
 
   <body>
@@ -29,8 +29,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <div class="navbar-nav">
                 <a class="nav-item nav-link" href="/pages/all-cookies.html">All Cookies</a>
-                <a class="nav-item nav-link" href="/pages/add-cookie.html">New Cookie</a>
-                <a class="nav-item nav-link active" href="/pages/about.html">About</a>
+                <a class="nav-item nav-link active" href="/pages/add-cookie.html">New Cookie</a>
+                <a class="nav-item nav-link" href="/pages/about.html">About</a>
               </div>
             </div>
           </div>
@@ -40,36 +40,41 @@
       <div>
 
         <main class="text-center d-flex flex-column justify-content-center">
-          <h2 class="text-white my-5 section-header">About Us</h2>
 
-          <div class="container bg-dark main-section mb-4">
-            <div class="row">
-              <div class="col-12 p-3 text-start">
-                <h3 class="pb-3 text-center">Hello and Welcome!</h3>
+          <h2 class="text-white my-5 section-header">Add a New Cookie <span>to the Database</span></h2>
 
-                <p class="h5 text-center pb-4">Here at Best Cookies Inc., we seek to discover the best cookie recipe possible, through any means whether it be scientific, religious, or even extraterrestrial.</p>
+          <div class="d-flex justify-content-center">
 
-                <p>Although this website is new, our journey began 15 years ago when the founder, Jacob Munyan, was 6 years old.</p>
-
-                <p>As Jacob grew up, his parents and older siblings made cookies almost once a week.</p>
-
-                <p>But these cookies were special. Not only was the dough tasty, the smell amazing, and the cookie perfectly crispy yet moist, but the recipe made 12 dozen.</p>
-
-                <p>Young Jacob would gaze at the towers of cookies in awe. So much so that he asked one sister to write the recipe on a sticky note for him. Then, in the middle of the night he got to work</p>
-
-                <p>Jacob wished to make cookies on par with those of his siblings. He experimented with the recipe, trying to change it over and over until it could be as good as the ones he tasted as a child. Throughout college he made cookies
-                  once
-                  a week.</p>
-
-                <p>Now, Jacob founded this incorporation in the hopes of collaborating with other cookie enthusiasts as we all search for the best cookie possible.</p>
-
-                <p>We wish you the best on this journey.</p>
-
-                <p class="h4 signature mt-4 ">Best Cookies Inc.</p>
+            <form class="bg-dark p-3 w-75 main-section">
+              <div class="form-group row">
+                <div class="col-sm-12 d-flex flex-column text-start">
+                  <label for="inputImage">Cookie Picture</label>
+                  <input type="file" class="form-control-file" id="inputImage">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" id="inputCookieName" placeholder="Cookie Name">
+                </div>
               </div>
 
-            </div>
+              <div class="form-group row">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" id="inputUserName" placeholder="Your Name (public)">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-12">
+                  <textarea class="form-control" id="inputCookieRecipe" placeholder="Recipe"></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-12 pt-3 align-self-center">
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
 
+            </form>
           </div>
         </main>
       </div>

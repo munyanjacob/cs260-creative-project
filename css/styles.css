@@ -80,7 +80,7 @@ footer a {
 }
 
 .active {
-  font-weight: 700;
+  background: #394550;
   color: white;
 }
 
@@ -118,6 +118,30 @@ main {
   line-height: 1rem;
 }
 
+.cookie-card {
+  margin-bottom: 1rem;
+}
+
+.search-cookie-input:focus {
+  border-color: none;
+  box-shadow: none;
+
+}
+
+.main-section {
+  border-radius: 0.5rem;
+  max-width: 800px;
+}
+
+.new-cookie-form .form-group {
+  margin-bottom: 8px;
+}
+
+.signature {
+  font-family: "Lucida Handwriting", sans-serif;
+}
+
+
 @media (min-width: 992px) {
   .navbar-nav a {
     border-left: 1px solid gray;
@@ -132,6 +156,11 @@ main {
     border-left: 1px solid gray;
   }
 
+  .search-cookie-container {
+    width: 75%;
+  }
+
+
 }
 
 @media (max-width: 991px) {
@@ -145,7 +174,9 @@ main {
     margin: 0px 16px;
   }
 
-
+  .search-cookie-container {
+    width: 80%;
+  }
 }
 
 @media (max-width: 425px) {
