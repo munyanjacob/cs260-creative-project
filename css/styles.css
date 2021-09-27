@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.page-container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+
+  background-image: url('/images/space-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header, main, footer {
+  flex-shrink: 1;
+  color: rgba(255, 255, 255, .8);
+}
+
+h1, h2, h3, h4, h5 {
+  padding-bottom: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.bi {
+  vertical-align: -.125em;
+}
+
+#github-link {
+  text-decoration: none;
+}
+
+#github-link:hover {
+  font-weight: bolder;
+}
+
+footer a {
+  color: rgba(255, 255, 255, .8);
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  vertical-align: -.125em;
+  user-select: none;
+}
+
+.navbar-nav a {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 0.45rem 1rem;
+  margin: 0.15rem 0;
+}
+
+.navbar-nav a:hover {
+  font-weight: 700;
+  background: #394550;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, .8);
+}
+
+.active {
+  font-weight: 700;
+  color: white;
+}
+
+
+.section-header {
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+h2 span {
+  display: inline-block;
+}
+
+main {
+  color: white;
+}
+
+.cookie-image {
+  height: 300px;
+  width: auto;
+}
+
+.cookie-image-emphasis {
+  height: 450px;
+}
+
+.cookie-title-wrapper {
+  vertical-align: top;
+  line-height: 28px;
+}
+
+.cookie-description-wrapper {
+  vertical-align: top;
+  line-height: 1rem;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav a {
+    border-left: 1px solid gray;
+  }
+
+  .cookie-image-emphasis {
+    height: 100%;
+    width: 100%;
+  }
+
+  .cookie-card-details {
+    border-left: 1px solid gray;
+  }
+
+}
+
+@media (max-width: 991px) {
+  footer .container-fluid {
+    width: 75% !important;
+  }
+
+  .cookie-image-emphasis {
+    width: 100%;
+    object-fit: cover;
+    margin: 0px 16px;
+  }
+
+
+}
+
+@media (max-width: 425px) {
+  footer .container-fluid {
+    width: 90% !important;
+  }
+
+  .cookie-image-emphasis {
+    width: 100%;
+    object-fit: cover;
+  }
+
+}
