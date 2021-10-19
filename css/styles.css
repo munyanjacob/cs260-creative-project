@@ -86,6 +86,7 @@ footer a {
   font-weight: 500;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
+  -webkit-text-stroke: 1px black;
 }
 
 h2 span {
